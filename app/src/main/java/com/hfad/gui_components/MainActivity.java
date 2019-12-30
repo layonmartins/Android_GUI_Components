@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,6 +13,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void checkCheckBoxMilk(){
+        CheckBox checkBoxMilk = (CheckBox) findViewById(R.id.checkbox_milk);
+        boolean checked = checkBoxMilk.isChecked();
+        if (checked) {
+            // do something
+        }
     }
 
     public void onToggleButtonClicked(View view){
