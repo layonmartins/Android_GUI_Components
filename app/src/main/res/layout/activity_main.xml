@@ -31,15 +31,18 @@
         android:id="@+id/checkbox_milk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Milk"></CheckBox>
+        android:text="Milk"
+        android:onClick="onCheckboxClicked"></CheckBox>
 
     <CheckBox
+        android:id="@+id/checkbox_sugar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sugar"
         android:scaleX="1.5"
         android:scaleY="1.5"
-        android:layout_margin="8dp"></CheckBox>
+        android:layout_margin="8dp"
+        android:onClick="onCheckboxClicked"></CheckBox>
 
 
 </LinearLayout>

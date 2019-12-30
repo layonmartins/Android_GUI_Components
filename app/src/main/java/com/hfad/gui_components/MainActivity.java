@@ -15,15 +15,29 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void checkCheckBoxMilk(){
-        CheckBox checkBoxMilk = (CheckBox) findViewById(R.id.checkbox_milk);
-        boolean checked = checkBoxMilk.isChecked();
-        if (checked) {
-            // do something
+    public void onCheckboxClicked(View view) {
+        // Has the checkbox that was clicked been checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Retrieve which checkbox was clicked
+        switch (view.getId()) {
+            case R.id.checkbox_milk:
+                if (checked) {
+                    // Milky coffe
+                } else {
+                }
+                break;
+            case R.id.checkbox_sugar:
+                if (checked) {
+                    // Sweet
+                } else {
+                }
+                break;
+
         }
     }
 
-    public void onToggleButtonClicked(View view){
+    public void onToggleButtonClicked(View view) {
         //Get the state of ToggleButton
         boolean on = ((ToggleButton) view).isChecked();
         if (on) {
