@@ -44,5 +44,36 @@
         android:layout_margin="8dp"
         android:onClick="onCheckboxClicked"></CheckBox>
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_cavemen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cavemen"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radio_astronauts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="astronauts"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:entries="@array/spinner_values"
+        android:onClick="onSpinnerClicked">
+
+    </Spinner>
+
 
 </LinearLayout>

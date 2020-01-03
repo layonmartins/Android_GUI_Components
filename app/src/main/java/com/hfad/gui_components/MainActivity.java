@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,6 +40,20 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void onRadioButtonClicked(View view) {
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        int id = radioGroup.getCheckedRadioButtonId();
+        switch(id) {
+            case R.id.radio_cavemen:
+                // Cavemen win
+                break;
+            case R.id.radio_astronauts:
+                // Astronauts win
+                break;
+        }
+    }
+
+
     public void onToggleButtonClicked(View view) {
         //Get the state of ToggleButton
         boolean on = ((ToggleButton) view).isChecked();
@@ -45,5 +62,10 @@ public class MainActivity extends AppCompatActivity {
         } else {
             // off
         }
+    }
+
+    public void onSpinnerClicked(View view) {
+        Spinner spinner = ((Spinner) view);
+        String string = String.valueOf(spinner.getSelectedItemId());
     }
 }
