@@ -7,4 +7,5 @@
         <item>dark</item>
     </string-array>
     <string name="starbuzz_logo">starbuzz_logo</string>
+    <string name="click_me">click me </string>
 </resources>
