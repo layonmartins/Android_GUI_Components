@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -67,5 +68,13 @@ public class MainActivity extends AppCompatActivity {
     public void onSpinnerClicked(View view) {
         Spinner spinner = ((Spinner) view);
         String string = String.valueOf(spinner.getSelectedItemId());
+    }
+
+    public void onImageViewClicked(View view) {
+        ImageView imageView = ((ImageView) view);
+        int image = R.drawable.starbuzz2;
+        String description = "This is the log";
+        imageView.setImageResource(image);
+        imageView.setContentDescription(description);
     }
 }

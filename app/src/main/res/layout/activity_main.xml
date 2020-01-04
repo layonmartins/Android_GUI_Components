@@ -70,10 +70,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="20dp"
-        android:entries="@array/spinner_values"
-        android:onClick="onSpinnerClicked">
+        android:entries="@array/spinner_values">
 
     </Spinner>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/starbuzz_logo"
+        android:contentDescription="@string/starbuzz_logo"
+        android:onClick="onImageViewClicked">
+    </ImageView>
 
 
 </LinearLayout>

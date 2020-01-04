@@ -6,4 +6,5 @@
         <item>brown</item>
         <item>dark</item>
     </string-array>
+    <string name="starbuzz_logo">starbuzz_logo</string>
 </resources>
