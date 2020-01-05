@@ -1,111 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:padding="30dp">
-
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ToggleButton"
-        android:onClick="onToggleButtonClicked">
-
-    </ToggleButton>
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:showText="true"
-        android:text="Switch"
-        android:textOff="Off"
-        android:textOn="On"
-        android:textSize="20dp" />
-
-    <CheckBox
-        android:id="@+id/checkbox_milk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Milk"
-        android:onClick="onCheckboxClicked"></CheckBox>
-
-    <CheckBox
-        android:id="@+id/checkbox_sugar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sugar"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
-        android:layout_margin="8dp"
-        android:onClick="onCheckboxClicked"></CheckBox>
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <RadioButton
-            android:id="@+id/radio_cavemen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="cavemen"
-            android:onClick="onRadioButtonClicked"/>
-
-        <RadioButton
-            android:id="@+id/radio_astronauts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="astronauts"
-            android:onClick="onRadioButtonClicked"/>
-    </RadioGroup>
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:entries="@array/spinner_values">
-
-    </Spinner>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/starbuzz_logo"
-        android:contentDescription="@string/starbuzz_logo"
-        android:onClick="onImageViewClicked"
-        android:adjustViewBounds="true"
-        android:maxWidth="100dp"
-        android:maxHeight="100dp">
-    </ImageView>
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
 
     <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ToggleButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableRight="@drawable/mac"
-            android:text="@string/click_me">
-        </Button>
-        <Button
+            android:onClick="onToggleButtonClicked"
+            android:text="ToggleButton">
+
+        </ToggleButton>
+
+        <Switch
+            android:id="@+id/switch1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableBottom="@drawable/windows"
-            android:text="@string/click_me" />
+            android:padding="10dp"
+            android:showText="true"
+            android:text="Switch"
+            android:textOff="Off"
+            android:textOn="On"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_milk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Milk"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/checkbox_sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onCheckboxClicked"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="Sugar"></CheckBox>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_cavemen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="cavemen" />
+
+            <RadioButton
+                android:id="@+id/radio_astronauts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="astronauts" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_values"
+            android:paddingTop="20dp">
+
+        </Spinner>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/starbuzz_logo"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:onClick="onImageViewClicked"
+            android:src="@drawable/starbuzz_logo"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/mac"
+                android:text="@string/click_me"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/windows"
+                android:text="@string/click_me" />
+        </LinearLayout>
+
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/instagram"
-            ></ImageButton>
+            android:onClick="onButtonClicked"
+            android:src="@drawable/instagram" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"
+            android:src="@drawable/instagram" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"
+            android:src="@drawable/instagram" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"
+            android:src="@drawable/instagram" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"
+            android:src="@drawable/instagram" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"
+            android:src="@drawable/instagram" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"
+            android:src="@drawable/instagram" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"
+            android:src="@drawable/instagram" />
     </LinearLayout>
-
-
-
-</LinearLayout>
+</ScrollView>

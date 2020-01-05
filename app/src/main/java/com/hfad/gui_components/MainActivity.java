@@ -77,4 +77,8 @@ public class MainActivity extends AppCompatActivity {
         imageView.setImageResource(image);
         imageView.setContentDescription(description);
     }
+
+    public void onButtonClicked(View view) {
+        // Do something in response to button click
+    }
 }
