@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -80,5 +81,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButtonClicked(View view) {
         // Do something in response to button click
+    }
+
+    public void showToast(View view){
+        CharSequence text = "Hello, I'm Toast!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(this, text, duration);
+        toast.show();
     }
 }
