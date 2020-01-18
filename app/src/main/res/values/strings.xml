@@ -14,4 +14,9 @@
     <string name="milk">Milk</string>
     <string name="sugar">Sugar</string>
     <string name="lemon">Lemon</string>
+    <string name="to_label">To:</string>
+    <string name="email_hint">Enter email address</string>
+    <string name="subject_hint">Subject</string>
+    <string name="send_button">Send</string>
+    <string name="message_hint">Message</string>
 </resources>
